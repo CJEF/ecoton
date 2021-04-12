@@ -1,0 +1,32 @@
+.goals {
+    &__inner {
+        padding: 15px 0 80px;
+    }
+    &__card {
+
+    }
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        width: 570px;
+        height: 570px;
+        max-width: 50%;
+        margin: 15px 0;
+        padding: 0 100px;
+    }
+
+    &-item {
+        &:first-child {
+            background-color: $green;
+        }
+    }
+
+    &-item__inner {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+}
