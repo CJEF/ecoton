@@ -1,0 +1,128 @@
+.process {
+  &__title {
+    margin: 145px 0 35px;
+  }
+  &__card {
+    .card-item:nth-child(4) {
+      .card-item__title {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-item {
+    &__title {
+      margin-bottom: 0;
+    }
+    &__text {
+      margin-top: 12px;
+    }
+    &__images {
+      margin: 0 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      width: 30%;
+    }
+    &__row {
+      display: flex;
+      justify-content: center;
+    }
+    &__container {
+      max-width: 785px;
+      margin: 0 auto;
+      &.process-item__text {
+        margin: 60px auto 60px;
+      }
+      &.card-item__inner {
+        margin: 45px auto 60px;
+      }
+      &.text {
+          margin-top: 60px;
+          margin-bottom: 50px;
+          display: block;
+          font-weight: 700;
+      }
+    }
+    &__btn {
+      margin: 40px 0 80px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__wrapper--cream {
+      background-color: $cream-bg;
+      .process-item {
+        display: flex;
+        &__content {
+          min-width: 370px;
+          margin: 80px 0 0 100px;
+        }
+      }
+    }
+  }
+  &-list {
+    &__item {
+      padding-left: 65px;
+      position: relative;
+      margin-bottom: 35px;
+      &:before {
+        content: "";
+        position: absolute;
+        top: -6px;
+        left: 0;
+        width: 50px;
+        height: 45px;
+        background-repeat: no-repeat;
+      }
+      &:nth-child(1)::before {
+        background-image: url("../images/src/icon-optimization-1.svg");
+      }
+      &:nth-child(2)::before {
+        background-image: url("../images/src/icon-optimization-2.svg");
+      }
+      &:nth-child(3)::before {
+        background-image: url("../images/src/icon-optimization-3.svg");
+      }
+      &:nth-child(4)::before {
+        top: -1px;
+        background-image: url("../images/src/icon-optimization-4.svg");
+      }
+      &:nth-child(5)::before {
+        background-image: url("../images/src/icon-optimization-5.svg");
+      }
+    }
+  }
+}
+
+.card {
+  &-item {
+    &:nth-child(2):hover {
+      .card-item__aspro {
+        transform: scale(1.2);
+      }
+    }
+    &__number {
+      font-family: "Roboto";
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 28px;
+      margin-bottom: 30px;
+    }
+    &__text--bold {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    &__text {
+      margin-top: 22px;
+    }
+    &__aspro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.7s;
+      height: inherit;
+      img {
+        width: 135px;
+        z-index: 2;
+      }
+    }
+  }
+}

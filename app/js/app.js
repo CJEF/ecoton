@@ -5,4 +5,7 @@ const swiper = new Swiper(".swiper-container", {
   navigation: {
     nextEl: ".swiper-button-next",
   },
+  autoplay: {
+    delay: 3000,
+  },
 });

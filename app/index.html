@@ -39,7 +39,7 @@
 						<!-- <div class="card-top__logo"></div> -->
 						<img class="card-top__logo" src="./images/src/kz-logo.svg" alt="kz-logo">
 					</div>
-					<img src="./images/src/ecoton-logo--white.svg" alt="ecoton-logo">
+					<img class="card-item__ecoton" src="./images/src/ecoton-logo--white.svg" alt="ecoton-logo">
 					<div class="card-item__bottom">
 						<span class="card-top__span">100 % ECO</span>
 					</div>
@@ -50,31 +50,33 @@
 				</div>
 
 				<div class="card__item card-item">
-					<div class="card-item__slider swiper-container">
-						<h2 class="slide__title title">Задачи сайта</h2>
-						<!-- Additional required wrapper -->
-						<div class="swiper-wrapper">
+					<div class="card-item__inner">
+						<h2 class="card-item__title title">Задачи сайта</h2>
+						<div class="card-item__slider swiper-container">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
 
-							<div class="swiper-slide">
-								<img src="./images/src/slider-icon-1.svg" alt="slider-icon">
-								<p class="slider__text">Отображать актуальный каталог продукции в зависимости от выбранного на сайте города.</p>
+								<div class="swiper-slide">
+									<img class="slider__icon" src="./images/src/slider-icon-1.svg" alt="slider-icon">
+									<p class="slider__text">Отображать актуальный каталог продукции в зависимости от выбранного на сайте города.</p>
+								</div>
+
+								<div class="swiper-slide">
+									<img class="slider__icon" src="./images/src/slider-icon-1.svg" alt="slider-icon">
+									<p class="slider__text">Отображать актуальный каталог продукции в зависимости от выбранного на сайте города.</p>
+								</div>
+
+								<div class="swiper-slide">
+									<img class="slider__icon" src="./images/src/slider-icon-1.svg" alt="slider-icon">
+									<p class="slider__text">Отображать актуальный каталог продукции в зависимости от выбранного на сайте города.</p>
+								</div>
+
 							</div>
 
-							<div class="swiper-slide">
-								<img src="./images/src/slider-icon-1.svg" alt="slider-icon">
-								<p class="slider__text">Отображать актуальный каталог продукции в зависимости от выбранного на сайте города.</p>
-							</div>
-
-							<div class="swiper-slide">
-								<img src="./images/src/slider-icon-1.svg" alt="slider-icon">
-								<p class="slider__text">Отображать актуальный каталог продукции в зависимости от выбранного на сайте города.</p>
-							</div>
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-next"></div>
 
 						</div>
-
-						<!-- If we need navigation buttons -->
-						<div class="swiper-button-next"></div>
-
 					</div>
 				</div>
 
@@ -83,166 +85,176 @@
 	</section>
 
 	<section class="start">
-		<div class="start__top start-top">
-			<div class="start-top__inner">
-				<div class="start-top__left">
-					<h2 class="start-top__title title">С чего начали</h2>
-					<p class="start-top__text">ОАО «Экотон+» производит газобетон на двух заводах в городах Астане и Актобе с проектной мощностью 200 тыс. куб. метров
-					в год. Совокупная производственная мощность составляет около 400 тыс. куб. метров продукции в год.</p>
-					<p class="start-top__descr text--medium">Чтобы повысить продажи, было решено создать интернет-магазин с удобным функционалом и продуманным интерфейсом.</p>
-				</div>
-				<div class="start-top__right">
-					<div class="start-top__logo logo-container">
-						<img src="./images/src/ecoton-logo__wrapper.svg" alt="logo-text" class="logo-wrap">
-						<img src="./images/src/ecoton-logo-green.svg" alt="" class="logo-ecoton">
+		<div class="container-content">
+			<div class="start__top start-top">
+				<div class="start-top__inner">
+					<div class="start-top__left">
+						<h2 class="start-top__title title">С чего начали</h2>
+						<p class="start-top__text text">ОАО «Экотон+» производит газобетон на двух заводах в городах Астане и Актобе с проектной мощностью 200 тыс. куб. метров
+						в год. Совокупная производственная мощность составляет около 400 тыс. куб. метров продукции в год.</p>
+						<p class="start-top__descr text--medium">Чтобы повысить продажи, было решено создать интернет-магазин с удобным функционалом и продуманным интерфейсом.</p>
+					</div>
+					<div class="start-top__right">
+						<div class="start-top__logo logo-container">
+							<img src="./images/src/ecoton-logo__wrapper.svg" alt="logo-text" class="logo-wrap">
+							<img src="./images/src/ecoton-logo-green.svg" alt="" class="logo-ecoton">
+						</div>
 					</div>
 				</div>
+			</div>
+			<div class="container-content__img">
+				<img src="./images/src/design-1.jpg" alt="eco-design">
 			</div>
 		</div>
-		<img src="./images/src/design-1.jpg" alt="eco-design">
+	</section>
 
-		<section class="process">
-			<div class="container">
-				<h2 class="process__title title">Процесс</h2>
-				<div class="process__card container card">
+	<section class="process">
+		<div class="container">
+			<h2 class="process__title title">Процесс</h2>
+			<div class="process__card container card">
 
-					<div class="card__item card-item process-item">
-						<div class="card-item__inner process-item__content">
-							<span class="card-item__number process-item__number">01.</span>
-							<h3 class="card-item__title process-item__title title">Выбор готового решения</h3>
-							<p class="card-item__text process-item__text">Учитывая задачи, которые должен решать сайт, мы начали реализацию проекта на основе готового решения Next.</p>
-							<p class="card-item__text process-item__text">*Next – это универсальный интернет-магазин для товаров любой тематики с полноценной мультирегиональностью и посадочными
-							страницами для каталога. Создан с учетом всех потребностей проектов, которые планируют развиваться и масштабироваться.</p>
-						</div>
+				<div class="card__item card-item process-item">
+					<div class="card-item__inner process-item__content">
+						<span class="card-item__number process-item__number">01.</span>
+						<h3 class="card-item__title process-item__title title">Выбор готового решения</h3>
+						<b class="card-item__text--bold process-item__text--bold">Учитывая задачи, которые должен решать сайт, мы начали реализацию проекта на основе готового решения Next.</b>
+						<p class="card-item__text process-item__text">*Next – это универсальный интернет-магазин для товаров любой тематики с полноценной мультирегиональностью и посадочными
+						страницами для каталога. Создан с учетом всех потребностей проектов, которые планируют развиваться и масштабироваться.</p>
 					</div>
+				</div>
 
-					<div class="card__item card-item">
+				<div class="card__item card-item">
+					<div class="card-item__aspro">
 						<img src="./images/src/aspro.svg" alt="aspro-logo">
 					</div>
-
-					<div class="card__item card-item">
-						<img src="./images/src/prototype-mockup.png" alt="prototype-mockup">
-					</div>
-
-					<div class="card__item card-item process-item">
-						<div class="card-item__inner process-item__content">
-							<span class="card-item__number process-item__number">02.</span>
-							<h3 class="card-item__title process-item__title title">Разработка структуры сайта и сбор контента</h3>
-							<p class="card-item__text process-item__text">Работы по сайту мы начали с разработки структуры будущего сайта.
-							Выявили необходимые разделы на сайте и предоставили Заказчику полный список информации, который необходимо предоставить
-							для наполнения сайта.</p>
-						</div>
-					</div>
-
 				</div>
-				<div class="process-item">
+
+				<div class="card__item card-item">
+					<img src="./images/src/prototype-mockup.png" alt="prototype-mockup">
+				</div>
+
+				<div class="card__item card-item process-item">
 					<div class="card-item__inner process-item__content">
-						<span class="card-item__number process-item__number">03.</span>
-						<h3 class="card-item__title process-item__title title">Работы на готовом решении</h3>
-						<p class="card-item__text process-item__text">После предоставления контента для наполнения сайта мы развернули готовое решение и выставили все настройки и параметры
-						сайта, которые согласовали ранее с заказчиком и наполнили сайт предоставленной информацией.</p>
+						<span class="card-item__number process-item__number">02.</span>
+						<h3 class="card-item__title process-item__title title">Разработка структуры сайта и сбор контента</h3>
+						<p class="card-item__text process-item__text">Работы по сайту мы начали с разработки структуры будущего сайта.
+						Выявили необходимые разделы на сайте и предоставили Заказчику полный список информации, который необходимо предоставить
+						для наполнения сайта.</p>
 					</div>
-					<div class="process-item__row">
-						<img src="./images/src/design-2.jpg" alt="Настройки готовых решений" class="process-item__images">
-						<img src="./images/src/design-3.jpg" alt="Настройки готовых решений" class="process-item__images">
-						<img src="./images/src/design-4.jpg" alt="Настройки готовых решений" class="process-item__images">
-					</div>
-						<p class="card-item__text process-item__text">АО «Экотон+» работает в нескольких городах, поэтому мы настроили функционал мультирегиональности по городам: Нур-Султан,
-						Актобе, Атырау, Туркестан. Данный функционал позволяет посетителям сайта видеть актуальную контактную информацию,
-						торговый каталог с актуальными ценами в зависимости от их местоположения, а также рассчитать более точно стоимость
-						доставки.</p>
-					<div class="process-item__row">
-						<img src="./images/src/banner.jpg" alt="Настройки готовых решений" class="process-item__images">
-					</div>
+				</div>
+
+			</div>
+			<div class="process-item">
+				<div class="card-item__inner process-item__content process-item__container">
+					<span class="card-item__number process-item__number">03.</span>
+					<h3 class="card-item__title process-item__title title">Работы на готовом решении</h3>
+					<p class="card-item__text process-item__text">После предоставления контента для наполнения сайта мы развернули готовое решение и выставили все настройки и параметры
+					сайта, которые согласовали ранее с заказчиком и наполнили сайт предоставленной информацией.</p>
+				</div>
+				<div class="process-item__row">
+					<img src="./images/src/design-2.png" alt="Настройки готовых решений" class="process-item__images">
+					<img src="./images/src/design-3.png" alt="Настройки готовых решений" class="process-item__images">
+					<img src="./images/src/design-4.png" alt="Настройки готовых решений" class="process-item__images">
+				</div>
+					<p class="card-item__text process-item__text process-item__container">АО «Экотон+» работает в нескольких городах, поэтому мы настроили функционал мультирегиональности по городам: Нур-Султан,
+					Актобе, Атырау, Туркестан. Данный функционал позволяет посетителям сайта видеть актуальную контактную информацию,
+					торговый каталог с актуальными ценами в зависимости от их местоположения, а также рассчитать более точно стоимость
+					доставки.</p>
+				<div class="process-item__row">
+					<img src="./images/src/banner.jpg" alt="Настройки готовых решений" class="process-item__banner">
+				</div>
+				<div class="process-item__btn">
 					<button class="btn btn--green dev_leave_request gtm_leftform_call">Хочу такой сайт</button>
 				</div>
-				<div class="process__wrapper--cream">
-					<div class="process-item">
-						<div class="card-item__inner process-item__content">
-							<span class="card-item__number process-item__number">04.</span>
-							<h3 class="card-item__title process-item__title title">Доработка расчета стоимости доставки</h3>
-							<p class="card-item__text process-item__text">При оформлении заказа в интернет-магазине на основе объема закупаемого товара (количества паллет с газобетоном) и
-							выбранного города для доставки при формировании заказа алгоритм выдает все возможные виды доставки. Вид транспорта
-							определяется автоматически: это может быть длинномер, фотон, манипулятор. Сумма доставки добавляется в заказ отдельной
-							строкой, что позволяет увидеть стоимость доставки в итоговом чеке.</p>
-						</div>
-						<div class="process-item__right">
-							<div class="process-item__block--green">
-								<p class="text">Поскольку расчет стоимости доставки газоблоков имеет свою специфику и стандартные модули доставки не могут корректно
-								рассчитать и выдать стоимость на этапе формирования заказа, мы написали собственный алгоритм расчета стоимости.</p>
-							</div>
-							<img src="./images/src/moon-bg.jpg" alt="background-image" class="process-item__right-image">
-						</div>
+			</div>
+			<div class="process__wrapper--cream">
+				<div class="process-item">
+					<div class="card-item__inner process-item__content">
+						<span class="card-item__number process-item__number">04.</span>
+						<h3 class="card-item__title process-item__title title">Доработка расчета стоимости доставки</h3>
+						<p class="card-item__text process-item__text">При оформлении заказа в интернет-магазине на основе объема закупаемого товара (количества паллет с газобетоном) и
+						выбранного города для доставки при формировании заказа алгоритм выдает все возможные виды доставки. Вид транспорта
+						определяется автоматически: это может быть длинномер, фотон, манипулятор. Сумма доставки добавляется в заказ отдельной
+						строкой, что позволяет увидеть стоимость доставки в итоговом чеке.</p>
 					</div>
-					<div class="process-item">
-						<div class="card-item__inner process-item__content">
-							<span class="card-item__number process-item__number">05.</span>
-							<h3 class="card-item__title process-item__title title">Тестирование и перенос сайта на домен ecoton.kz</h3>
-							<p class="card-item__text process-item__text">После наполнения сайта контентом, настройки необходимого функционала и завершения доработок по сайту, мы провели его
-							финальное тестирование, прогнав различные сценарии использования. На основе итогов тестирования внесли корректировки в
-							алгоритм доставки и перенесли сайт на основной домен ecoton.kz</p>
+					<div class="process-item__right">
+						<div class="process-item__block--green">
+							<p class="text">Поскольку расчет стоимости доставки газоблоков имеет свою специфику и стандартные модули доставки не могут корректно
+							рассчитать и выдать стоимость на этапе формирования заказа, мы написали собственный алгоритм расчета стоимости.</p>
 						</div>
-						<div class="process-item__right">
-							<img src="./images/src/moon-bg.jpg" alt="background-image" class="process-item__right-image">
-						</div>
+						<img src="./images/src/moon-bg.jpg" alt="background-image" class="process-item__right-image">
 					</div>
 				</div>
 				<div class="process-item">
 					<div class="card-item__inner process-item__content">
-						<span class="card-item__number process-item__number">06.</span>
-						<h3 class="card-item__title process-item__title title">Интеграция сайта с CRM-системой Bitrix24</h3>
-						<p class="card-item__text process-item__text">Клиент оформляет заказ, заказывает обратный звонок с сайта или заполняет форму «Задать вопрос», а все его контакты сразу
-						же попадают в CRM-систему, где команда отдела продаж продолжает работу с клиентом. Данные о клиентах не теряются и
-						руководство всегда в курсе текущей ситуации.</p>
+						<span class="card-item__number process-item__number">05.</span>
+						<h3 class="card-item__title process-item__title title">Тестирование и перенос сайта на домен ecoton.kz</h3>
+						<p class="card-item__text process-item__text">После наполнения сайта контентом, настройки необходимого функционала и завершения доработок по сайту, мы провели его
+						финальное тестирование, прогнав различные сценарии использования. На основе итогов тестирования внесли корректировки в
+						алгоритм доставки и перенесли сайт на основной домен ecoton.kz</p>
 					</div>
-					<img src="./images/src/design-5.jpg" alt="" class="process-item__absolute">
-				</div>
-				<div class="process-item">
-					<div class="card-item__inner process-item__content">
-						<span class="card-item__number process-item__number">07.</span>
-						<h3 class="card-item__title process-item__title title">Оптимизация и настройка аналитики</h3>
-						<p class="card-item__text process-item__text">После запуска сайта на домене ecoton.kz мы произвели работы по базовой оптимизации, включающие:</p>
+					<div class="process-item__right">
+						<img src="./images/src/moon-bg.jpg" alt="background-image" class="process-item__right-image">
 					</div>
-					<ul class="process-item__list process-list">
-						<li class="process-list__item">
-							<p class="process-list__text text">настройку правил индексации сайта поисковыми системами и генерация карты сайта в формате XML</p>
-						</li>
-						<li class="process-list__item">
-							<p class="process-list__text text">установку и настройку счетчиков посещений и инструментов для вебмастеров от поисковых систем Google и Яндекс</p>
-						</li>
-						<li class="process-list__item">
-							<p class="process-list__text text">настройку целей на все формы обратной связи</p>
-						</li>
-						<li class="process-list__item">
-							<p class="process-list__text text">настройку аналитики, позволяющую посчитать количество посетителей сайта, которые достигли наших целей (посмотрели
-							контакты, воспользовались формой обратной связи или заказа с сайта, скачали прайс-лист и т.д.)</p>
-						</li>
-						<li class="process-list__item">
-							<p class="process-list__text text">настройку аналитики по воронке продаж, которая позволяет просматривать, на каком этапе пользователи чаще всего прерывают
-							процесс заказа и покидают сайт</p>
-						</li>
-					</ul>
-					<img src="./images/src/design-6.jpg" alt="Google analytics" class="process-item__img">
-					<b class="text">Полученные данные в дальнейшем подскажут, в каком направлении продолжать развивать сайт.</b>
 				</div>
 			</div>
-		</section>
+			<div class="process-item">
+				<div class="card-item__inner process-item__content process-item__container">
+					<span class="card-item__number process-item__number">06.</span>
+					<h3 class="card-item__title process-item__title title">Интеграция сайта с CRM-системой Bitrix24</h3>
+					<p class="card-item__text process-item__text">Клиент оформляет заказ, заказывает обратный звонок с сайта или заполняет форму «Задать вопрос», а все его контакты сразу
+					же попадают в CRM-систему, где команда отдела продаж продолжает работу с клиентом. Данные о клиентах не теряются и
+					руководство всегда в курсе текущей ситуации.</p>
+				</div>
+				<div class="process-item__row">
+					<img src="./images/src/design-5.jpg" alt="" class="process-item__absolute">
+				</div>
+			</div>
+			<div class="process-item">
+				<div class="card-item__inner process-item__content process-item__container">
+					<span class="card-item__number process-item__number">07.</span>
+					<h3 class="card-item__title process-item__title title">Оптимизация и настройка аналитики</h3>
+					<p class="card-item__text process-item__text">После запуска сайта на домене ecoton.kz мы произвели работы по базовой оптимизации, включающие:</p>
+				</div>
+				<ul class="process-item__list process-list process-item__container">
+					<li class="process-list__item">
+						<p class="process-list__text text">настройку правил индексации сайта поисковыми системами и генерация карты сайта в формате XML</p>
+					</li>
+					<li class="process-list__item">
+						<p class="process-list__text text">установку и настройку счетчиков посещений и инструментов для вебмастеров от поисковых систем Google и Яндекс</p>
+					</li>
+					<li class="process-list__item">
+						<p class="process-list__text text">настройку целей на все формы обратной связи</p>
+					</li>
+					<li class="process-list__item">
+						<p class="process-list__text text">настройку аналитики, позволяющую посчитать количество посетителей сайта, которые достигли наших целей (посмотрели
+						контакты, воспользовались формой обратной связи или заказа с сайта, скачали прайс-лист и т.д.)</p>
+					</li>
+					<li class="process-list__item">
+						<p class="process-list__text text">настройку аналитики по воронке продаж, которая позволяет просматривать, на каком этапе пользователи чаще всего прерывают
+						процесс заказа и покидают сайт</p>
+					</li>
+				</ul>
+				<div class="process-item__row">
+					<img src="./images/src/design-6.jpg" alt="Google analytics" class="process-item__img">
+				</div>
+				<b class="text process-item__container">Полученные данные в дальнейшем подскажут, в каком направлении продолжать развивать сайт.</b>
+			</div>
+		</div>
+	</section>
 		<!-- ./ process -->
 
 		<!-- result -->
-
-		<section class="result">
-			<div class="result__inner">
-				<h3 class="result__title title">Итог</h3>
-				<p class="result__text text">Нам удалось разработать сайт, который автоматизирует процесс продаж и в разы сокращает время менеджеров на расчет
-				стоимости доставки и обработку заказов.</p>
-				<a href="javascript:;" class="result__link link--green dev_leave_request gtm_leftform_call">Хочу такой сайт</a>
-				<img src="./images/src/ecoton-footer.png" alt="ecoton" class="result__logo fade-up">
-			</div>
-		</section>
-
-		<!-- ./ result -->
+	<section class="result">
+		<div class="result__inner process-item__container">
+			<h2 class="result__title title">Итог</h2>
+			<p class="result__text text">Нам удалось разработать сайт, который автоматизирует процесс продаж и в разы сокращает время менеджеров на расчет
+			стоимости доставки и обработку заказов.</p>
+			<a href="javascript:;" class="btn result__btn btn--green dev_leave_request gtm_leftform_call">Хочу такой сайт</a>
+			<img src="./images/src/ecoton-footer.png" alt="ecoton" class="result__logo fade-up">
+		</div>
 	</section>
+		<!-- ./ result -->
 </main>
 
 

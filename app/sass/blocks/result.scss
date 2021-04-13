@@ -1,0 +1,32 @@
+.result {
+    background-image: url('../images/src/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__inner {
+        padding: 65px 0 120px;
+    }
+    &__title {
+        margin-bottom: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        color: #000000;
+    }
+    &__text {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+        margin-bottom: 55px;
+    }
+    &__logo {
+        display: block;
+        margin-top: 120px;
+        margin-left: -20px;
+    }
+    &__btn {
+        margin: 0 auto;
+    }
+}
