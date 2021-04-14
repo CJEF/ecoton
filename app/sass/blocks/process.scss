@@ -32,6 +32,8 @@
       max-width: 785px;
       margin: 0 auto;
       &.process-item__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
         margin: 60px auto 60px;
       }
       &.card-item__inner {
@@ -101,16 +103,6 @@
           height: auto;
       }
       &__right {
-        // position: relative;
-        // &:before {
-        //   content: '';
-        //   background-image: url('../images/src/tablet.png');
-        //   background-repeat: no-repeat;
-        //   width: 100%;
-        //   height: auto;
-        //   top: 0;
-        //   right: 0;
-        // }
       }
     }
     .process__tablet {
@@ -124,7 +116,7 @@
     }
     .process__truck {
       position: absolute;
-      bottom: -60px;
+      bottom: -45px;
       right: -41px;
     }
   }
@@ -168,6 +160,11 @@
 }
 
 .card {
+  &__item:nth-child(1) {
+    .card-item__text--small {
+      font-size: 14px;
+    }
+  }
   &-item {
     &:nth-child(2):hover {
       .card-item__aspro {
@@ -201,3 +198,5 @@
     }
   }
 }
+
+.card-item__text--bold{margin-top: 25px;}
