@@ -35,17 +35,18 @@
 
         }
     }
+    .container-content {
+        overflow: visible;
+    }
     .container-content__img {
-        margin-top: 65px;
         display: flex;
         justify-content: center;
         overflow: visible;
         z-index: 5;
-        // transform: translateY(65px);
+        transform: translateY(65px);
         img {
             overflow: visible;
             z-index: 5;
-            // transform: translateY(65px);
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
         }
     }

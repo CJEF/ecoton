@@ -113,3 +113,12 @@
         }
     }
 }
+
+.swiper-button-next:after {
+    content: url('../images/src/slider-arrow.svg');
+    width: 16.5px;
+}
+
+.swiper-container {
+    max-width: 400px;
+}

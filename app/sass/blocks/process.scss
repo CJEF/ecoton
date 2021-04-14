@@ -1,4 +1,7 @@
 .process {
+  .container {
+    overflow: visible;
+  }
   &__title {
     margin: 145px 0 35px;
   }
@@ -46,23 +49,94 @@
       display: flex;
       justify-content: center;
     }
+  }
 
-    &__wrapper--cream {
-      background-color: $cream-bg;
-      .process-item {
-        display: flex;
-        &__content {
-          min-width: 370px;
-          margin: 80px 0 0 100px;
+  &__wrapper--cream {
+    background-color: $cream-bg;
+    .process-item {
+      display: flex;
+      position: relative;
+      &:nth-child(1) {
+        margin-bottom: 60px;
+      }
+      &:nth-child(2) {
+        .card-item__inner {
+          margin-bottom: 100px;
+        }
+        .process-item__right-image {
+          top: 78px;
+        }
+        .process__tablet {
+          top: 115px;
         }
       }
+      &__content {
+        max-width: 357px;
+        margin: 80px 0 0 100px;
+      }
+      &__title {
+        max-width: 255px;
+        line-height: 32px !important;
+      }
+      &__block--green {
+        position: relative;
+        margin-top: 65px;
+        margin-left: 60px;
+        z-index: 3px;
+        .text {
+          padding: 30px 30px 35px;
+          background-color: $green;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+          max-width: 600px;
+        }
+      }
+      &__right-image {
+          position: absolute;
+          overflow: visible;
+          top: 180px;
+          right: -215px;
+          min-width: 885px;
+          height: auto;
+      }
+      &__right {
+        // position: relative;
+        // &:before {
+        //   content: '';
+        //   background-image: url('../images/src/tablet.png');
+        //   background-repeat: no-repeat;
+        //   width: 100%;
+        //   height: auto;
+        //   top: 0;
+        //   right: 0;
+        // }
+      }
+    }
+    .process__tablet {
+      position: absolute;
+      bottom: -90px;
+    }
+    .process__worker {
+      position: absolute;
+      top: 93px;
+      right: -48px;
+    }
+    .process__truck {
+      position: absolute;
+      bottom: -60px;
+      right: -41px;
     }
   }
+
   &-list {
     &__item {
       padding-left: 65px;
       position: relative;
       margin-bottom: 35px;
+      &:hover::before {
+        transform: scale(1.3);
+      }
       &:before {
         content: "";
         position: absolute;
@@ -71,6 +145,7 @@
         width: 50px;
         height: 45px;
         background-repeat: no-repeat;
+        transition: .2s;
       }
       &:nth-child(1)::before {
         background-image: url("../images/src/icon-optimization-1.svg");

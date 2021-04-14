@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=0.1, maximum-scale=1, user-scalable=1">
-	<meta name="viewport" content="width=1700, user-scalable=yes">
+	<meta name="viewport" content="width=1400, user-scalable=yes">
 	<title>Разработка интернет-магазина на системе управления 1С-Битрикс с расчетом доставки товара до конечной точки</title>
 	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/aos.css">
 	<link rel="stylesheet" href="./css/app.min.css">
 </head>
 <body>
@@ -63,12 +64,12 @@
 
 								<div class="swiper-slide">
 									<img class="slider__icon" src="./images/src/slider-icon-1.svg" alt="slider-icon">
-									<p class="slider__text">Отображать актуальный каталог продукции в зависимости от выбранного на сайте города.</p>
+									<p class="slider__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.</p>
 								</div>
 
 								<div class="swiper-slide">
 									<img class="slider__icon" src="./images/src/slider-icon-1.svg" alt="slider-icon">
-									<p class="slider__text">Отображать актуальный каталог продукции в зависимости от выбранного на сайте города.</p>
+									<p class="slider__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, nostrum? Lorem ipsum dolor sit amet consectetur adipisicing.</p>
 								</div>
 
 							</div>
@@ -178,11 +179,13 @@
 						строкой, что позволяет увидеть стоимость доставки в итоговом чеке.</p>
 					</div>
 					<div class="process-item__right">
-						<div class="process-item__block--green">
+						<img src="./images/src/moon-bg.jpg" alt="background-image" class="process-item__right-image">
+						<img src="./images/src/tablet.png" loading="lazy" alt="tablet" class="process__tablet">
+						<img src="./images/src/truck.png" loading="lazy" alt="truck" class="process__truck">
+						<div class="process-item__block--green" data-aos="fade-left" data-aos-duration="1500">
 							<p class="text">Поскольку расчет стоимости доставки газоблоков имеет свою специфику и стандартные модули доставки не могут корректно
 							рассчитать и выдать стоимость на этапе формирования заказа, мы написали собственный алгоритм расчета стоимости.</p>
 						</div>
-						<img src="./images/src/moon-bg.jpg" alt="background-image" class="process-item__right-image">
 					</div>
 				</div>
 				<div class="process-item">
@@ -195,6 +198,8 @@
 					</div>
 					<div class="process-item__right">
 						<img src="./images/src/moon-bg.jpg" alt="background-image" class="process-item__right-image">
+						<img src="./images/src/tablet-2.png" loading="lazy" alt="tablet" class="process__tablet">
+						<img src="./images/src/worker.png" loading="lazy" alt="worker" class="process__worker">
 					</div>
 				</div>
 			</div>
@@ -207,7 +212,7 @@
 					руководство всегда в курсе текущей ситуации.</p>
 				</div>
 				<div class="process-item__row">
-					<img src="./images/src/design-5.jpg" alt="" class="process-item__absolute">
+					<img src="./images/src/design-5.jpg" loading="lazy" alt="design image" class="process-item__absolute" loading="lazy">
 				</div>
 			</div>
 			<div class="process-item">
@@ -236,7 +241,7 @@
 					</li>
 				</ul>
 				<div class="process-item__row">
-					<img src="./images/src/design-6.jpg" alt="Google analytics" class="process-item__img">
+					<img src="./images/src/design-6.jpg" loading="lazy" alt="Google analytics" class="process-item__img">
 				</div>
 				<b class="text process-item__container">Полученные данные в дальнейшем подскажут, в каком направлении продолжать развивать сайт.</b>
 			</div>
@@ -251,7 +256,7 @@
 			<p class="result__text text">Нам удалось разработать сайт, который автоматизирует процесс продаж и в разы сокращает время менеджеров на расчет
 			стоимости доставки и обработку заказов.</p>
 			<a href="javascript:;" class="btn result__btn btn--green dev_leave_request gtm_leftform_call">Хочу такой сайт</a>
-			<img src="./images/src/ecoton-footer.png" alt="ecoton" class="result__logo fade-up">
+			<img src="./images/src/ecoton-footer.png" alt="ecoton" data-aos="fade-down" data-aos-duration="1500" class="result__logo">
 		</div>
 	</section>
 		<!-- ./ result -->
@@ -259,6 +264,7 @@
 
 
 <script src="js/swiper.min.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/app.min.js"></script>
 </body>
 </html>

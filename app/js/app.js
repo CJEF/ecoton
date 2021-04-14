@@ -9,3 +9,5 @@ const swiper = new Swiper(".swiper-container", {
     delay: 3000,
   },
 });
+
+AOS.init();
