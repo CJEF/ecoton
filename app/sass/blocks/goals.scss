@@ -76,9 +76,6 @@
                 max-width: 270px;
                 margin-top: 30px;
             }
-            .slider__icon {
-                border-radius: 100%;
-            }
         }
         &__inner {
             display: flex;
@@ -129,4 +126,14 @@
 
 .swiper-container {
     max-width: 400px;
+}
+
+.slider-image {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    img {
+        transform: scale(.7);
+    }
 }
