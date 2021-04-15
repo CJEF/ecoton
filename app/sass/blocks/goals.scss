@@ -54,8 +54,23 @@
             }
         }
         &:nth-child(3) {
-            background-image: url('../images/src/moon-bg.jpg');
+            &:hover::before,
+            &:hover img {
+                transform: scale(1.2);
+            }
             position: relative;
+            transition: .7s;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('../images/src/moon-bg.jpg');
+                background-size: cover;
+                transition: .7s;
+            }
             img {
                 position: absolute;
                 bottom: 0;

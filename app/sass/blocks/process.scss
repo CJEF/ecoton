@@ -176,6 +176,9 @@
       }
     }
   }
+  &__prototype {
+    transition: all .7s;
+  }
 }
 
 .card {
@@ -217,14 +220,17 @@
   }
 }
 
-// .card-item--hover:hover ~ .card-item {
-//   .card-item__aspro {
-//     transform: scale(1.2);
-//   }
-// }
-
 .scale {
   transform: scale(1.2);
+  &:before {
+    transform: scale(1.2);
+  }
+}
+
+.card-item--hover {
+  &:before {
+    transform: scale(1.2);
+  }
 }
 
 .card-item__text--bold{margin-top: 25px;}

@@ -30,21 +30,32 @@ AOS.init();
 // }
 
 let aspro = document.querySelector("#aspro");
+let prototype = document.querySelector("#prototype");
 let hoverBlock1 = document.querySelector("#hoverblock1");
 let hoverBlock2 = document.querySelector(".card-item__mockup--hover");
-let hoverBlock1Before = window.getComputedStyle(
-  document.querySelector("#hoverblock1"),
-  ":before"
-).transform;
-
-console.log(hoverBlock1Before);
 
 
 hoverBlock1.addEventListener("mouseenter", function (e) {
   aspro.classList.add("scale")
-  hoverBlock1Before.value = "scale(1.2)";
+  let wrap = aspro.closest(".card-item");
+  wrap.classList.add("card-item--hover");
 });
 
 hoverBlock1.addEventListener("mouseleave", function (e) {
   aspro.classList.remove("scale");
+  let wrap = aspro.closest(".card-item");
+  wrap.classList.remove("card-item--hover");
+});
+
+
+hoverBlock2.addEventListener("mouseenter", function (e) {
+  prototype.classList.add("scale");
+  let wrap = prototype.closest(".card-item");
+  wrap.classList.add("card-item--hover");
+});
+
+hoverBlock2.addEventListener("mouseleave", function (e) {
+  prototype.classList.remove("scale");
+  let wrap = prototype.closest(".card-item");
+  wrap.classList.remove("card-item--hover");
 });
