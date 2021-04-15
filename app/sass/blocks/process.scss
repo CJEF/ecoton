@@ -23,6 +23,10 @@
       margin: 0 15px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
       width: 30%;
+      transition: all .3s;
+      &:hover {
+        transform: scale(1.15);
+      }
     }
     &__row {
       display: flex;
@@ -32,7 +36,6 @@
       max-width: 785px;
       margin: 0 auto;
       &.process-item__text {
-        font-family: 'Roboto', sans-serif;
         font-size: 18px;
         margin: 60px auto 60px;
       }
@@ -50,6 +53,24 @@
       margin: 40px 0 80px;
       display: flex;
       justify-content: center;
+    }
+    &__banner {
+      transition: all .4s;
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+    &__absolute {
+      transition: all .4s;
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+    &__img {
+      transition: all .4s;
+      &:hover {
+        transform: scale(1.15);
+      }
     }
   }
 
@@ -102,12 +123,10 @@
           min-width: 885px;
           height: auto;
       }
-      &__right {
-      }
     }
     .process__tablet {
       position: absolute;
-      bottom: -90px;
+      bottom: -17px;
     }
     .process__worker {
       position: absolute;
@@ -116,7 +135,7 @@
     }
     .process__truck {
       position: absolute;
-      bottom: -45px;
+      bottom: 22px;
       right: -41px;
     }
   }
@@ -172,7 +191,6 @@
       }
     }
     &__number {
-      font-family: "Roboto";
       font-weight: 700;
       font-size: 42px;
       line-height: 28px;
@@ -197,6 +215,16 @@
       }
     }
   }
+}
+
+// .card-item--hover:hover ~ .card-item {
+//   .card-item__aspro {
+//     transform: scale(1.2);
+//   }
+// }
+
+.scale {
+  transform: scale(1.2);
 }
 
 .card-item__text--bold{margin-top: 25px;}
